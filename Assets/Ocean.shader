@@ -1,4 +1,6 @@
-﻿Shader "BoomBeachOcean/Ocean"
+﻿// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
+
+Shader "BoomBeachOcean/Ocean"
 {
 	Properties
 	{
@@ -51,7 +53,7 @@
 			{
 				v2f o;
 
-				o.vertex = mul(UNITY_MATRIX_MVP, v.vertex);
+				o.vertex = UnityObjectToClipPos(v.vertex);
 				o.uv = v.uv;
 
 				float ystretch = 0.2;

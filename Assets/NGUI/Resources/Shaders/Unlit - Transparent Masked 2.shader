@@ -1,3 +1,5 @@
+// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
+
 Shader "Hidden/Unlit/Transparent Masked 2"
 {
 	Properties
@@ -70,7 +72,7 @@ Shader "Hidden/Unlit/Transparent Masked 2"
 
 			v2f vert (appdata_t v)
 			{
-				o.vertex = mul(UNITY_MATRIX_MVP, v.vertex);
+				o.vertex = UnityObjectToClipPos(v.vertex);
 				o.color = v.color;
 				o.texcoord = v.texcoord;
 				o.texcoord1 = v.texcoord1;
