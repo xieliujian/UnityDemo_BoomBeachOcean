@@ -1,8 +1,4 @@
-# UnityDemo_BoomBeachOcean
-
-****
-
-<h2 id="Demo1">BoomBeachOcean的Demo展示海岛奇兵匹配地图海洋的效果</h2>
+# UnityDemo_BoomBeachOcean展示海岛奇兵匹配地图海洋的效果
 
 # 文档地址
 [https://zhuanlan.zhihu.com/p/38711782](https://zhuanlan.zhihu.com/p/38711782 "海岛奇兵效果文档")
